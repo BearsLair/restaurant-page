@@ -41,6 +41,24 @@ const homePage = () => {
   const weekendHoursText = document.createTextNode("Sat-Sun: 7 a.m to 10 p.m.");
   weekendHours.appendChild(weekendHoursText);
   weekdayHours.classList.add("hours-text");
+
+  const location = document.createElement("div");
+  mainContent.appendChild(location);
+  location.classList.add("location");
+
+  const locationTitle = document.createElement("h3");
+  location.appendChild(locationTitle);
+  const locationTitleText = document.createTextNode("Location");
+  locationTitle.appendChild(locationTitleText);
+  locationTitle.classList.add("location-title");
+
+  const locationElement = document.createElement("p");
+  location.appendChild(locationElement);
+  const locationElementText = document.createTextNode(
+    "1234 Sunrise Blvd, Bears Lair, California"
+  );
+  locationElement.appendChild(locationElementText);
+  locationElement.classList.add("location-title");
 };
 
 export default homePage;
