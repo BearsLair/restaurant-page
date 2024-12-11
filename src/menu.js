@@ -96,6 +96,7 @@ const menuPage = () => {
   mainContent.appendChild(menuItems);
   menuItems.classList.add("menuItems");
 
+  // Breakfast list
   const breakfastList = document.createElement("div");
   menuItems.appendChild(breakfastList);
   breakfastList.classList.add("breakfastList");
@@ -111,7 +112,7 @@ const menuPage = () => {
     breakfastList.innerHTML += itemContent;
   });
 
-  // LunchList
+  // Lunch list
   const lunchList = document.createElement("div");
   menuItems.appendChild(lunchList);
   lunchList.classList.add("lunchList");
@@ -127,7 +128,7 @@ const menuPage = () => {
     lunchList.innerHTML += itemContent;
   });
 
-  // Dinner List
+  // Dinner list
   const dinnerList = document.createElement("div");
   menuItems.appendChild(dinnerList);
   dinnerList.classList.add("dinnerList");
@@ -143,7 +144,7 @@ const menuPage = () => {
     dinnerList.innerHTML += itemContent;
   });
 
-  // Beverage List
+  // Beverage list
   const beverageList = document.createElement("div");
   menuItems.appendChild(beverageList);
   beverageList.classList.add("beverageList");
