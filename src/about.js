@@ -23,22 +23,25 @@ const aboutPage = () => {
   mainContent.appendChild(contactInfo);
   contactInfo.classList.add("contact-info");
 
-  // Add classes for styling
   const contactTitle = document.createElement("h3");
   contactInfo.appendChild(contactTitle);
   const contactTitleText = document.createTextNode("Contact Us");
   contactTitle.appendChild(contactTitleText);
+  contactTitle.classList.add("contact-title");
 
   const phone = document.createElement("p");
   contactInfo.appendChild(phone);
   const phoneText = document.createTextNode("Phone: 555-555-5555");
   phone.appendChild(phoneText);
+  phone.classList.add("contact-text");
+
   const email = document.createElement("p");
   contactInfo.appendChild(email);
   const emailText = document.createTextNode(
     "Email: mrbear@totallynotfakeemail.com"
   );
   email.appendChild(emailText);
+  email.classList.add("contact-text");
 };
 
 export default aboutPage;
