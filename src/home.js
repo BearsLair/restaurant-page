@@ -20,6 +20,27 @@ const homePage = () => {
   const image = mainContent.appendChild(homeTitle);
   mainContent.appendChild(homeImage);
   mainContent.appendChild(homeDescription);
+
+  const hours = document.createElement("div");
+  mainContent.appendChild(hours);
+  hours.classList.add("hours");
+
+  const hoursTitle = document.createElement("h3");
+  hours.appendChild(hoursTitle);
+  const hoursTitleText = document.createTextNode("Hours Open");
+  hoursTitle.appendChild(hoursTitleText);
+
+  const weekdayHours = document.createElement("p");
+  hours.appendChild(weekdayHours);
+  const weekdayHoursText = document.createTextNode("Mon-Fri: 8 a.m to 9 p.m.");
+  weekdayHours.appendChild(weekdayHoursText);
+  weekdayHours.classList.add("hours-text");
+
+  const weekendHours = document.createElement("p");
+  hours.appendChild(weekendHours);
+  const weekendHoursText = document.createTextNode("Sat-Sun: 7 a.m to 10 p.m.");
+  weekendHours.appendChild(weekendHoursText);
+  weekdayHours.classList.add("hours-text");
 };
 
 export default homePage;
