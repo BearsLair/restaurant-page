@@ -1,5 +1,6 @@
-const homepage = () => {
+const homePage = () => {
   const mainContent = document.querySelector("#content");
+  mainContent.innerHTML = "";
 
   const homeTitle = document.createElement("h1");
   const title = document.createTextNode("Bears Den Restaurant");
@@ -21,4 +22,4 @@ const homepage = () => {
   mainContent.appendChild(homeDescription);
 };
 
-export default homepage;
+export default homePage;
