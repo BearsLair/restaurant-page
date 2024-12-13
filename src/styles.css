@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-width: 680px;
+  min-width: 800px;
 
   height: 100vh;
   width: 100%;
@@ -105,7 +105,9 @@ img {
 .breakfastList,
 .lunchList,
 .dinnerList,
-.beverageList {
+.beverageList,
+.about-section,
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,4 +148,24 @@ img {
 
 .menuItems img {
   margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  font-style: italic;
+  width: 90%;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.contact-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-text {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 1.2rem;
+  width: 90%;
 }
