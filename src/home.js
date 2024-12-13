@@ -11,10 +11,9 @@ const homePage = () => {
   const homeImage = document.createElement("img");
   homeImage.src =
     "https://images.pexels.com/photos/10216441/pexels-photo-10216441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-  const image = mainContent.appendChild(homeTitle);
+  mainContent.appendChild(homeImage);
   homeImage.alt = "Welcoming bear statue.";
   homeImage.classList.add("home-img");
-  mainContent.appendChild(homeImage);
 
   const homeDescription = document.createElement("p");
   const description = document.createTextNode(
