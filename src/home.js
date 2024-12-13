@@ -4,7 +4,7 @@ const homePage = () => {
 
   const homeTitle = document.createElement("h1");
   mainContent.appendChild(homeTitle);
-  const title = document.createTextNode("Bears Den Restaurant");
+  const title = document.createTextNode("Bear's Den Restaurant");
   homeTitle.appendChild(title);
   homeTitle.classList.add("home-title");
 
