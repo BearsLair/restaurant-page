@@ -91,6 +91,7 @@ const menuPage = () => {
   const titleText = document.createTextNode("Menu");
   title.appendChild(titleText);
   mainContent.appendChild(title);
+  title.classList.add("page-title");
 
   const menuItems = document.createElement("div");
   mainContent.appendChild(menuItems);

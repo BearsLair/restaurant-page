@@ -6,6 +6,7 @@ const aboutPage = () => {
   const titleText = document.createTextNode("About us");
   title.appendChild(titleText);
   mainContent.appendChild(title);
+  title.classList.add("page-title");
 
   const aboutSection = document.createElement("div");
   mainContent.appendChild(aboutSection);

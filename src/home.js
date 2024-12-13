@@ -2,11 +2,11 @@ const homePage = () => {
   const mainContent = document.querySelector("#content");
   mainContent.innerHTML = "";
 
-  const homeTitle = document.createElement("h1");
-  mainContent.appendChild(homeTitle);
-  const title = document.createTextNode("Bear's Den Restaurant");
-  homeTitle.appendChild(title);
-  homeTitle.classList.add("home-title");
+  const title = document.createElement("h1");
+  mainContent.appendChild(title);
+  const titleText = document.createTextNode("Bear's Den Restaurant");
+  title.appendChild(titleText);
+  title.classList.add("title");
 
   const homeImage = document.createElement("img");
   homeImage.src =
